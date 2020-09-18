@@ -1,0 +1,11 @@
+{
+    "body": "{\"username\":\"showmen das\",\"password\":\"123456\"}",
+    "pathParameters": {
+      "id": "e34e1840-f999-11ea-b199-4f3d1fb81a54"
+    },
+    "requestContext": {
+      "identity": {
+        "cognitoIdentityId": "USER-SUB-1234"
+      }
+    }
+  }

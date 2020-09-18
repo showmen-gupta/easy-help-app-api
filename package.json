@@ -10,15 +10,30 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AnomalyInnovations/serverless-nodejs-starter.git"
+    "url": "git+https://github.com/AnomalyInnovations/serverless-nodejs-starter.git"
   },
   "devDependencies": {
     "aws-sdk": "^2.754.0",
+    "eslint": "^7.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
     "serverless-bundle": "^2.0.0",
     "serverless-dotenv-plugin": "^2.1.1",
     "serverless-offline": "^5.3.3"
   },
   "dependencies": {
     "uuid": "^7.0.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/AnomalyInnovations/serverless-nodejs-starter/issues"
+  },
+  "homepage": "https://github.com/AnomalyInnovations/serverless-nodejs-starter#readme",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": []
 }
