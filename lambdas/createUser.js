@@ -19,6 +19,10 @@ export const create = handler(async (event, context) => {
       createdAt: Date.now()
     }
   }
-  await dynamoDb.put(params)
+  try {
+    await dynamoDb.put(params)
+  } catch (error) {
+    return error
+  }
   return params.Item
 })

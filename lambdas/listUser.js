@@ -11,6 +11,9 @@ export const list = handler(async (event, context) => {
   }
 
   const res = await dynamoDb.query(params)
-
-  return res.Items
+  try {
+    return res.Items
+  } catch (error) {
+    return error
+  }
 })
