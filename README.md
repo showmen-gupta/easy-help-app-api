@@ -53,7 +53,7 @@ $ npm install
 To run a function on your local
 
 ``` bash
-$ serverless invoke local --function hello
+$ serverless invoke local --function create
 ```
 
 To simulate API Gateway locally using [serverless-offline](https://github.com/dherault/serverless-offline)
@@ -71,7 +71,7 @@ $ serverless deploy
 Deploy a single function
 
 ``` bash
-$ serverless deploy function --function hello
+$ serverless deploy function --function create
 ```
 
 #### Running Tests
