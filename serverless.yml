@@ -23,7 +23,7 @@ provider:
    # These environment variables are made available to our functions
   # under process.env.
   environment:
-    tableName: easy_help_app_db
+    tableName: easy_help_db
 
   # 'iamRoleStatements' defines the permission policy for the Lambda function.
   # In this case Lambda functions are granted with permissions to access DynamoDB.

@@ -9,13 +9,15 @@ export const create = handler(async (event, context) => {
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
       locationId: uuid.v1(),
-      username: data.username,
-      password: data.password,
-      long: data.long,
-      lat: data.lat,
+      fullname: data.fullname,
+      age: data.age,
+      phone: data.phone,
+      gender: data.gender,
       address: data.address,
-      userType: data.userType,
       attachment: data.attachment,
+      lat: data.lat,
+      long: data.long,
+      userType: data.userType,
       createdAt: Date.now()
     }
   }
