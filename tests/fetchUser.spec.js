@@ -34,7 +34,7 @@ describe('fetchUser', () => {
 
   it('should return with status', () => {
     return result.then(data => {
-      expect(data.status).not.toBe(undefined)
+      expect(data.statusCode).not.toBe(undefined)
     })
   })
 })

@@ -1,18 +1,18 @@
 export default function handler (lambda) {
   return async function (event, context) {
-    let body, status
+    let body, statusCode
 
     try {
       // Run the lambda function
       body = await lambda(event, context)
-      status = 200
+      statusCode = 200
     } catch (e) {
-      console.log(e)
-      return [500, { error: e.message }]
+      body = { error: e.message }
+      statusCode = 500
     }
 
     return {
-      status,
+      statusCode,
       body: JSON.stringify(body),
       headers: {
         'Access-Control-Allow-Origin': '*',
