@@ -3,14 +3,10 @@ import dynamoDb from '../libs/dynamodb-lib'
 
 export const list = handler(async (event, context) => {
   const params = {
-    TableName: process.env.tableName,
-    KeyConditionExpression: 'userId = :userId',
-    ExpressionAttributeValues: {
-      ':userId': event.requestContext.identity.cognitoIdentityId
-    }
+    TableName: process.env.tableName
   }
 
-  const res = await dynamoDb.query(params)
+  const res = await dynamoDb.scan(params)
   try {
     return res.Items
   } catch (error) {
