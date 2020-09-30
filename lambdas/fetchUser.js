@@ -11,7 +11,7 @@ export const fetch = handler(async (event, context) => {
   }
   const res = await dynamoDb.get(params)
   if (!res.Item) {
-    throw new Error('Item not found')
+    throw new Error('User not found')
   }
   return res.Item
 })
