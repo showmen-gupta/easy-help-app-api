@@ -10,6 +10,7 @@ export const create = handler(async (event, context) => {
       userId: event.requestContext.identity.cognitoIdentityId,
       locationId: uuid.v1(),
       fullname: data.fullname,
+      email: data.email,
       age: data.age,
       phone: data.phone,
       gender: data.gender,
