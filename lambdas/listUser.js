@@ -9,7 +9,7 @@ export const list = handler(async (event, context) => {
   const res = await dynamoDb.scan(params)
   try {
     return res.Items
-  } catch (e) {
-    return e
+  } catch (error) {
+    return error
   }
 })
