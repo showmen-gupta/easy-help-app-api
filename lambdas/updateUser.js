@@ -10,7 +10,7 @@ export const update = handler(async (event, context) => {
     // - 'locationId': path parameter
     Key: {
       userId: event.requestContext.identity.cognitoIdentityId,
-      locationId: event.pathParameters.id
+      email: event.pathParameters.email
     },
     // 'UpdateExpression' defines the attributes to be updated
     // 'ExpressionAttributeValues' defines the value in the update expression
