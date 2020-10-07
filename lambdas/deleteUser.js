@@ -7,7 +7,7 @@ export const remove = handler(async (event, context) => {
 
     Key: {
       userId: event.requestContext.identity.cognitoIdentityId,
-      locationId: event.pathParameters.id
+      email: event.pathParameters.email
     }
   }
   await dynamoDb.delete(params)
