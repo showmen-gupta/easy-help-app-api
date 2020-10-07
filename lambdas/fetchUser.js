@@ -5,8 +5,7 @@ export const fetch = handler(async (event, context) => {
   const params = {
     TableName: process.env.tableName,
     Key: {
-      userId: event.requestContext.identity.cognitoIdentityId,
-      locationId: event.pathParameters.id
+      userId: event.pathParameters.id
     }
   }
   const res = await dynamoDb.get(params)
