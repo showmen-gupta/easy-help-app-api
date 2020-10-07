@@ -1,10 +1,10 @@
 {
     "pathParameters": {
-      "email": "shwmndsgpt99@gmail.com"
+      "id": "36b16a20-f9f2-11ea-adc0-95ca97baef58"
     },
     "requestContext": {
       "identity": {
-        "cognitoIdentityId": "eu-central-1:7a4f06ec-b4be-4021-ba07-519f8dfb169a"
+        "cognitoIdentityId": "USER-SUB-1234"
       }
     }
   }
