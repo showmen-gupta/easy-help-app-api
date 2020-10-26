@@ -72,12 +72,12 @@ functions:
           authorizer: aws_iam
   get:
     # Defines an HTTP API endpoint that calls the main function in fetchUser.js
-    # - path: url path is /getUsers/{id}
+    # - path: url path is /getUsers/{email}
     # - method: GET request
     handler: lambdas/fetchUser.fetch
     events:
       - http:
-          path: getUsers/{id}
+          path: getUsers/{email}
           method: get
           cors: true
           authorizer: aws_iam
@@ -94,23 +94,23 @@ functions:
           authorizer: aws_iam
   update:
     # Defines an HTTP API endpoint that calls the main function in updateUser.js
-    # - path: url path is /updateUser/{id}
+    # - path: url path is /updateUser/{email}
     # - method: PUT request
     handler: lambdas/updateUser.update
     events:
       - http:
-          path: updateUser/{id}
+          path: updateUser/{email}
           method: put
           cors: true
           authorizer: aws_iam
   delete:
     # Defines an HTTP API endpoint that calls the main function in delete.js
-    # - path: url path is /notes/{id}
+    # - path: url path is /notes/{email}
     # - method: DELETE request
     handler: lambdas/deleteUser.remove
     events:
       - http:
-          path: removeUser/{id}
+          path: removeUser/{email}
           method: delete
           cors: true
           authorizer: aws_iam  
