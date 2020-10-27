@@ -2,8 +2,8 @@ import handler from '../libs/handler-lib'
 import dynamoDb from '../libs/dynamodb-lib'
 
 export const fetch = handler(async (event, context) => {
-  console.log(event)
-  console.log(context)
+  const email = JSON.parse(event.email)
+  console.log(email)
   const params = {
     TableName: process.env.tableName,
     Key: {
