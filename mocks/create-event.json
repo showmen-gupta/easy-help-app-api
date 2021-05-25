@@ -1,5 +1,5 @@
 {
-    "body": "{\"fullname\":\"showmen\",\"age\":25, \"phone\":\"+4741222706\",\"gender\":\"male\",\"long\":20.87951, \"lat\":85.45789,\"address\":\"stavanger\",\"userType\":1, \"attachment\":\"test.png\", \"createdAt\":1487800950620}",
+    "body": "{\"fullname\":\"eugine\",\"age\":25, \"phone\":\"+4741222706\",\"gender\":\"male\",\"long\":20.87951, \"lat\":85.45789,\"address\":\"stavanger\",\"userType\":1, \"attachment\":\"test.png\", \"createdAt\":1487800950620}",
     "requestContext": {
       "identity": {
         "cognitoIdentityId": "USER-SUB-1234"
